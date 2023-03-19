@@ -1,0 +1,462 @@
+# tamaki-designwork.github.io
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration:none;
+}
+
+body {
+	background: #444040;
+	color: #ffffff;
+	font-family: 'Noto Sans JP', sans-serif;
+}
+
+header {
+	height: 300px;
+	padding: 50px;
+	text-align: center;
+	background: url(../img/main.jpg) 50% 0% no-repeat;
+	background-size: cover;
+}
+
+main {
+	margin-bottom: 100px;
+}
+
+h1.top {
+	animation: fade 3s;
+}
+@keyframes fade {
+	0% {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+h2.top {
+	animation: fade 3s;
+}
+@keyframes fade {
+	0% {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+	
+h1 {
+	font-size: 80px;
+	line-height: 1;
+	margin: 70px 0 30px 0;
+}
+
+h2 {
+	font-size: 60px;
+	line-height: 1;
+	margin-top: 45px;
+}
+
+h3 {
+	font-size: 50px;
+	margin-bottom: 40px;
+	line-height: 1;
+	text-align: center;
+}
+
+h4 {
+	font-size: 32px;
+	text-align: center;
+	/* margin-top: 20px; */
+}
+
+h5 {
+	font-size: 50px;
+	margin-bottom: 60px;
+	line-height: 1;
+	text-align: center;
+}
+
+h6 {
+	font-size: 50px;
+	margin-bottom: 60px;
+	line-height: 1;
+	text-align: center;
+}
+
+/* プロフィール */
+section.profile {
+	margin-top: 60px;
+}
+
+section.profile div {
+	width: 900px;
+	/* text-align: center; */
+	margin: 65px auto 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+section.profile img {
+	width: 250px;
+	height: auto;
+}
+section.profile dl {
+ 	width: 450px; 	
+ }
+section.profile dt {
+	font-size: 24px;
+	font-weight: 400; 
+}
+section.profile dd {
+	margin-top: 10px;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1.5;
+}
+section.profile p {
+	margin-top: 8px;
+	font-size: 16px;
+	font-weight: 100;
+}
+
+/* ←cssでならmemoが書けるよ！！→ */
+
+/* ワークス */
+section.works {
+	margin-top: 200px;
+}
+section.works ul {
+	width: 950px;
+	text-align: center; 
+	margin: 15px auto/*これ前は200にした*/ 10 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+
+section.works li {
+	width: 320px;
+}
+
+section.works li:nth-child(2n), 
+section.works li:nth-child(2n - 1) {
+	margin: 20px auto 0 auto;
+}
+
+section.works img {
+	width: 100%;
+	height: auto;
+}
+
+section.works dl {
+	margin-top: 10px;
+}
+
+section.works dt {
+	font-size: 30px;
+	font-weight: 400; /*bold*/
+	margin-top: 10px;
+}
+
+section.works dd {
+  	margin-top: 10px;
+  	font-size: 20px;
+	font-weight: 400; /*bold*/
+}
+
+section.works p {
+	margin-top: 10px;
+}
+
+section.works a {
+	color: #ffffff;
+}
+
+section.works span a img {
+	transition: all 1s linear;
+}
+
+section.works a:hover img {
+	opacity: 0.5;  /* ←１を不透明度100％としたときの透明度 */
+	transform: translateY(-12px);
+	}
+/* translateY(-10px); */
+/* transform: scale(1.2); */  /* scale(1.1); */
+/* rotate＝回転 */
+
+section.works dt a :hover {
+	color: #ffffff;
+	font-size: 30px;
+}
+section.works span {
+	display: block;
+	height: 250px;
+}
+
+
+
+/*other works*/
+
+section.otherworks {
+	margin-top: 200px;
+}
+section.otherworks ul {
+	width: 950px;
+	text-align: center; 
+	margin: 25px auto 10 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+section.otherworks li {
+	width: 250px;
+}
+section.otherworks li:nth-child(3n),
+section.otherworks li:nth-child(3n - 1) {
+	margin-left: 100px;
+}
+section.otherworks img {
+	width: 100%;
+	height: auto;
+}
+section.otherworks dl {
+	margin-top: 15px;
+}
+section.otherworks dt {
+	font-size: 23px;
+	font-weight: 400;
+	margin-top: 140px;
+}
+section.otherworks dd {
+	margin-top: 10px;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+section.otherworks a {
+	color: #ffffff;
+}
+
+section.otherworks span a img {
+	transition: all 1s linear;
+}
+
+section.otherworks a:hover img {
+	opacity: 0.5;
+	transform: translateY(-12px);
+}
+/* translateY(-10px); */
+/* scale(1.2); */
+/* rotate＝回転 */
+
+section.otherworks dt a:hover {
+	color: #ffffff;
+	font-size: 30px;
+}
+section.otherworks span {
+	display: block;
+	height: 250px;
+}
+
+h1.detail {
+	text-align: center;
+	border-bottom: 5px #ffffff solid;
+	
+}
+
+div.demo {
+	width: 500px;
+	margin: 100px auto 0 auto;
+	padding: 20px;
+	border: 10px #ffffff solid;
+	background: #0000ff;
+}
+
+
+/*photos*/
+
+section.photos{
+	margin-top: 200px;
+	text-align: center; 
+}
+section.photos ul {
+	width: 400px;
+	text-align: center; 
+	margin: 25px auto 10 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+section.photos li {
+	text-align: center;
+}
+section.photos img {
+	width: 100%;
+	height: auto;
+}
+section.photos dl {
+	margin-top: 60px;
+	font-size: 30px;
+	/* text-align: center; */
+}
+section.photos a {
+	color: #ffffff;
+}
+
+section.photos span a img {
+	transition: all 1s linear;
+}
+
+section.photos a:hover img {
+	opacity: 0.5;
+	transform: translateY(-12px);
+}
+/* translateY(-10px); */
+/* scale(1.2); */
+/* rotate＝回転 */
+
+section.photos dt a:hover {
+	color: #ffffff;
+	font-size: 30px;
+}
+section.photos span {
+	display: block;
+	height: 250px;
+}
+
+
+/*detail*/
+
+h1.detail {
+	text-align: center;
+	border-bottom: 5px #ffffff solid;
+}
+
+ /* div.demo {
+	width: 500px;
+	margin: 100px auto 0 auto;
+	padding: 20px;
+	border: 10px #ffffff solid;
+	background: #0000ff;
+} */
+
+section.detail {
+	width: 960px;
+	margin: 40px auto 0 auto;
+}
+
+section.detail a {
+	color: #ffffff;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+section.detail h1{
+	font-size: 60px;
+	text-align: center;
+}
+
+section.detail h2 {
+	font-size: 40px;
+	text-align: center;
+	font-weight: 400;
+}
+
+section.detail div.main-img{
+	margin: 40px auto 10 auto;
+	text-align: center;
+}
+
+
+section.detail div.caption {
+	color: #ffffff;
+	font-size: 18px;
+	text-align: center;
+}
+
+
+/* 
+section.deitail div.link a {
+	color: #ffffff;
+	font-size: 16px;
+	margin-top: 20px;
+}
+*/
+
+/* photo */
+
+h1.photo {
+	text-align: center;
+}
+
+
+ /* div.demo {
+	width: 500px;
+	margin: 100px auto 0 auto;
+	padding: 20px;
+	border: 10px #ffffff solid;
+	background: #0000ff;
+} */
+
+section.photo {
+	margin: 40px auto 0 auto;
+}
+
+section.photo ul {
+	width: 1200;
+	text-align: center; 
+	margin: 25px auto 10 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+
+section.photo a {
+	color: #ffffff;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+section.photo h1{
+	font-size: 60px;
+	text-align: center;
+}
+
+section.photo li:nth-child(3n),
+section.photo li:nth-child(3n - 1) {
+	margin-left: auto;
+}
+
+section.photo div.main-img{
+	margin: 60px auto 10 auto;
+}
+
+section.photo div.second-img{
+	margin: 60px auto 0 auto;
+}
+
+section.photo div.third-img{
+	margin: 60px auto 0 auto;
+}
+
+section.photo div.caption {
+	color: #ffffff;
+	font-size: 16px;
+}
